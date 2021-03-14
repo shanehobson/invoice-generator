@@ -1,5 +1,10 @@
-export class Invoice {
-  constuctor(invoice) {
+class Invoice {
 
+  data;
+
+  constuctor(invoice) {
+    this.data = invoice;
   }
 }
+
+module.exports = { Invoice };
