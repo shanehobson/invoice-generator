@@ -8,6 +8,7 @@ router.post('/build', cors(), async (req, res) => {
         const url = await build(req.body);
         res.status(200).send({ url });
     } catch (e) {
+        console.log(e)
         res.status(500).send(e)
     }
 })
